@@ -12,7 +12,7 @@ const Footer = () => {
               FL 33134 USA
             </p>
           </div>
-          <div className=' pt-[18px] space-y-10 space-x-0 pl-[30px]'>
+          <div className=' pt-[18px] space-y-10 space-x-0 pl-[25px]'>
             <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="space-y-10 space-x-0"> 
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Home</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Contact</a></li>
             </ul>
           </div>
-          <div className=' pt-[18px] space-y-10 space-x-0 pl-0'>
+          <div className=' pt-[18px] space-y-10 space-x-0 pl-[-35px]'>
             <h3 className="text-lg font-semibold mb-4">Help</h3>
             <ul className="space-y-10 space-x-0">
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Payment Options</a></li>
@@ -29,16 +29,16 @@ const Footer = () => {
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Privacy Policies</a></li>
             </ul>
           </div>
-          <div className=' pt-[18px] space-y-10 pl-0'>
+          <div className=' pt-[18px] space-y-10 pl-0 pr-10'>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <div className="flex">
               <input 
                 type="email" 
                 placeholder="Enter Your Email Address" 
-                className="border border-b-2 px-4 py-2 focus:outline-none focus:border-gray-300" 
+                className="border border-b-2 px-2 py-2 focus:outline-none focus:border-gray-300 " 
               />
               <button 
-                className="hover:text-gray-300 text-gray-500 underline font-semibold py-2 px-4"
+                className="hover:text-gray-300 text-gray-500 underline font-semibold py-2 px-2"
               >
                 SUBSCRIBE
               </button>
