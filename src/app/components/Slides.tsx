@@ -1,11 +1,10 @@
-
-      
 "use client"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
+import Image from "next/image"
 
 const RoomCarousel = () => {
   return (
@@ -31,7 +30,7 @@ const RoomCarousel = () => {
 
               <SwiperSlide>
                 <div className="relative">
-                  <img
+                  <Image
                     src="/slidepic1.png"
                     alt="slide1"
                     className="w-full h-full object-cover-lg"/>
@@ -44,7 +43,7 @@ const RoomCarousel = () => {
 
               <SwiperSlide>
                 <div className="relative">
-                  <img
+                  <Image
                     src="/slidepic2.png"
                     alt="slide2"
                     className="w-full h-full object-cover"/>
@@ -57,7 +56,7 @@ const RoomCarousel = () => {
 
               <SwiperSlide>
                 <div className="relative">
-                  <img
+                  <Image
                     src="/slidepic3.png"
                     alt="slide3"
                     className="w-full h-full object-cover"/>
