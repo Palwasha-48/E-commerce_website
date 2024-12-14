@@ -7,6 +7,8 @@ import { faSearch, faHeart, faShoppingCart, faUser, faBars, faTimes } from "@for
 import { IoMdHeartEmpty, IoMdShare } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Footer from "./Footer";
+import Slides from "./Slides";
+import Slide2 from "./Slide2";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -217,6 +219,8 @@ export default function HomePage() {
     </button>
     </div>
 
+<Slides />
+<Slide2 />
 <Footer />
 </div>
       </>
