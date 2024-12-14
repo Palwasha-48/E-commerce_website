@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -7,8 +7,6 @@ import { faSearch, faHeart, faShoppingCart, faUser, faBars, faTimes } from "@for
 import { IoMdHeartEmpty, IoMdShare } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Footer from "./Footer";
-
-
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,25 +21,24 @@ export default function HomePage() {
             <Image src="/logo.png" alt="Logo" className="h-12 mr-2" height={290} width={60}/>
             <Image src="/logoname.png" alt="Logo Name" className="h-6" height={100} width={120}/>
           </div>
+          
           <div className="hidden lg:flex items-center space-x-6">
             <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
             <a href="/Shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
             <a href="/Blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
             <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
           </div>
+          
           <div className="flex items-center space-x-4">
             <FontAwesomeIcon icon={faUser} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faSearch} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faHeart} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faShoppingCart} className="hover:text-gray-800 cursor-pointer" />
-
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden focus:outline-none"
-            >
+              className="lg:hidden focus:outline-none">
               <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
             </button>
-
           </div>
         </div>
 
@@ -57,8 +54,7 @@ export default function HomePage() {
       </div>
       <div
         className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/homepagemain.jpeg')" }}
-      >
+        style={{ backgroundImage: "url('/homepagemain.jpeg')" }}>
         <div className="bg-[#fdf1e3] p-6 sm:p-8 lg:p-10 w-11/12 max-w-md rounded-lg shadow-lg">
           <p className="uppercase text-xs sm:text-sm tracking-widest text-gray-600 mb-2">New Arrival</p>
           <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#9c772f] mb-4">Discover Our New Collection</h1>
