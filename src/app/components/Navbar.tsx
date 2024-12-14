@@ -113,7 +113,7 @@ export default function HomePage() {
           </div>
 
           <div 
-            className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] bg-cover bg-center flex items-center"
+            className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] bg-cover bg-center flex flex-col justify-center items-center space-y-4"
                       style={{ backgroundImage: "url('/bgpic.png') " }}>
               <div className="bg-white">
                   <button className="items-center justify-center font-bold text-yellow-500 hover:bg-orange-100 h-10 w-40 ">Add to cart</button>
