@@ -101,7 +101,7 @@ export default function HomePage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative">
             <Image
               src="/pro1.png"
               alt="pro1"
@@ -112,6 +112,9 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Stylish cafe chair</p>
               <p className="text-black">Rp 2.500.000 <span className="text-gray-600"><del> Rp 3.500.000 </del></span></p>
             </div>
+            <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
+          -30%
+        </div>
           </div>
 
           <div 
@@ -129,7 +132,7 @@ export default function HomePage() {
               </div>
           </div>
 
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative">
             <Image
               src="/pro2.png" 
               alt="pro2"
@@ -140,9 +143,12 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Luxury big sofa</p>
               <p className="text-black">Rp 7.000.000 <span className="text-gray-600"><del> Rp 14.000.000 </del></span></p>
             </div>
+            <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
+          -50%
+        </div>
           </div>
 
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative ">
             <Image
               src="/pro3.jpeg" 
               alt="pro3"
@@ -153,6 +159,9 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Outdoor bar table and stool</p>
               <p className="text-black">Rp 500.000</p>
             </div>
+            <div className="absolute top-4 right-4 bg-emerald-400 text-white text-sm font-semibold px-[10px] py-[15px] rounded-full">
+          New
+        </div>
           </div>
 
           <div className="bg-gray-100 ">
@@ -168,7 +177,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative ">
             <Image
               src="/pro5.png" 
               alt="pro5"
@@ -179,9 +188,12 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Small mug</p>
               <p className="text-black">Rp 150.000</p>
             </div>
+            <div className="absolute top-4 right-4 bg-emerald-400 text-white text-sm font-semibold px-[10px] py-[15px] rounded-full">
+          New
+        </div>
           </div>
 
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative">
             <Image
               src="/pro6.jpeg" 
               alt="pro6"
@@ -192,9 +204,12 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Cute bed set</p>
               <p className="text-black">Rp 7.000.000<span className="text-gray-600"><del>Rp 14.000.000</del></span></p>
             </div>
+            <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
+          -50%
+        </div>
           </div>
 
-          <div className="bg-gray-100 ">
+          <div className="bg-gray-100 relative ">
             <Image
               src="/pro7.jpeg" 
               alt="pro7"
@@ -205,10 +220,10 @@ export default function HomePage() {
               <p className="font-normal text-gray-600">Minimalist flower pot</p>
               <p className="text-black">Rp 500.000</p>
             </div>
+            <div className="absolute top-4 right-4 bg-emerald-400 text-white text-sm font-semibold px-[10px] py-[15px] rounded-full">
+          New
+        </div>
           </div>
-
-
-        
 
       </div>
     </div>
@@ -218,7 +233,7 @@ export default function HomePage() {
       Show More
     </button>
     </div>
-
+    
 <Slides />
 <Slide2 />
 <Footer />
