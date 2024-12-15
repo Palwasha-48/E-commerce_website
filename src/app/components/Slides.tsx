@@ -27,12 +27,13 @@ const RoomCarousel = () => {
               loop={false}
               className="mySwiper">
 
-
               <SwiperSlide>
                 <div className="relative">
                   <Image
                     src="/slidepic1.png"
                     alt="slide1"
+                    height={100}
+                    width={100}
                     className="w-full h-full object-cover-lg"/>
                   <div className="absolute bottom-10 left-5 bg-white p-4 h-[120px] w-[200px] items-center justify-center flex flex-col">
                     <span className="text-gray-500 text-sm">01 ------ Bed Room</span>
@@ -46,6 +47,8 @@ const RoomCarousel = () => {
                   <Image
                     src="/slidepic2.png"
                     alt="slide2"
+                    height={100}
+                    width={100}
                     className="w-full h-full object-cover"/>
                   <div className="absolute bottom-10 left-5 bg-white p-4 h-[120px] w-[200px] items-center justify-center flex flex-col ">
                     <span className="text-gray-500 text-sm">02 ------ Living Room</span>
@@ -59,6 +62,8 @@ const RoomCarousel = () => {
                   <Image
                     src="/slidepic3.png"
                     alt="slide3"
+                    height={100}
+                    width={100}
                     className="w-full h-full object-cover"/>
                   <div className="absolute bottom-10 left-5 bg-white p-4 h-[120px] w-[200px] items-center justify-center flex flex-col">
                     <span className="text-gray-500 text-sm">03 ------ Kitchen</span>
