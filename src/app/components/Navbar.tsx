@@ -110,7 +110,8 @@ export default function HomePage() {
            <div className="p-4 text-left">
               <p className="text-xl font-bold">Syltherine</p>
               <p className="font-normal text-gray-600">Stylish cafe chair</p>
-              <p className="text-black">Rp 2.500.000 <span className="text-gray-600"><del> Rp 3.500.000 </del></span></p>
+              <p className="text-black">Rp 2.500.000</p>
+              <span className="text-gray-600"><del> Rp 3.500.000 </del></span>
             </div>
             <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
           -30%
@@ -141,7 +142,8 @@ export default function HomePage() {
               <div className="p-4 text-left">
               <p className="text-xl font-bold">Lolito</p>
               <p className="font-normal text-gray-600">Luxury big sofa</p>
-              <p className="text-black">Rp 7.000.000 <span className="text-gray-600"><del> Rp 14.000.000 </del></span></p>
+              <p className="text-black">Rp 7.000.000 </p>
+              <span className="text-gray-600"><del> Rp 14.000.000 </del></span>
             </div>
             <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
           -50%
@@ -202,7 +204,8 @@ export default function HomePage() {
             <div className="p-4 text-left">
               <p className="text-xl font-bold">Pingky</p>
               <p className="font-normal text-gray-600">Cute bed set</p>
-              <p className="text-black">Rp 7.000.000<span className="text-gray-600"><del>Rp 14.000.000</del></span></p>
+              <p className="text-black">Rp 7.000.000</p>
+              <span className="text-gray-600"><del>Rp 14.000.000</del></span>
             </div>
             <div className="absolute top-4 right-4 bg-red-400 text-white text-sm font-semibold px-[8px] py-[15px] rounded-full">
           -50%
