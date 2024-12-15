@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,75 +11,76 @@ import Slide2 from "./Slide2";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    
+  return ( 
     <>
     <div className="bg-white min-h-screen pb-4">
+
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Image src="/logo.png" alt="Logo" className="h-12 mr-2" height={290} width={60}/>
             <Image src="/logoname.png" alt="Logo Name" className="h-6" height={100} width={120}/>
           </div>
+
           <div className="hidden lg:flex items-center space-x-6">
             <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
             <a href="/Shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
             <a href="/Blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
             <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
           </div>
+
           <div className="flex items-center space-x-4">
             <FontAwesomeIcon icon={faUser} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faSearch} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faHeart} className="hover:text-gray-800 cursor-pointer" />
             <FontAwesomeIcon icon={faShoppingCart} className="hover:text-gray-800 cursor-pointer" />
-
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden focus:outline-none"
-            >
+              className="lg:hidden focus:outline-none">
               <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
             </button>
-
           </div>
         </div>
-
-        {menuOpen && (
+              {menuOpen && (
           <div className="lg:hidden flex flex-col mt-4 space-y-4">
             <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
             <a href="/Shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
             <a href="/Blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
             <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
           </div>
-        )}
+          )}
+        </div>
+      
 
-      </div>
-      <div
+      {/*  home page  -----  2nd part */}
+        <div
         className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] bg-cover bg-center flex items-center justify-center pl-[300px]"
         style={{ backgroundImage: "url('/homepagemain.jpeg')" }}>
-        <div className="bg-[#fdf1e3] p-6 sm:p-8 lg:p-10 w-11/12 max-w-md rounded-lg shadow-lg">
-          <p className="uppercase text-xs sm:text-sm tracking-widest text-gray-600 mb-2">New Arrival</p>
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#9c772f] mb-4">Discover Our New Collection</h1>
-          <p className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-          <button className="bg-[#9c772f] text-white uppercase font-bold py-2 px-4 sm:py-2 sm:px-6 rounded hover:bg-[#7d5c24] transition duration-300">Buy Now</button>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-4 py-12 sm:py-16">
-        <div className="text-center mb-8 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">Browse The Range</h2>
-          <p className="text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white">
-            <Image src="/item3.png" alt="Dining" width={400} height={300} />
-            <div className="p-4 text-center">
-              <p className="text-lg font-bold">Dining</p>
-            </div>
+          <div className="bg-[#fdf1e3] p-6 sm:p-8 lg:p-10 w-11/12 max-w-md rounded-lg shadow-lg">
+            <p className="uppercase text-xs sm:text-sm tracking-widest text-gray-600 mb-2">New Arrival</p>
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#9c772f] mb-4">Discover Our New Collection</h1>
+            <p className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            <button className="bg-[#9c772f] text-white uppercase font-bold py-2 px-4 sm:py-2 sm:px-6 rounded hover:bg-[#7d5c24] transition duration-300">Buy Now</button>
           </div>
-          <div className="bg-white">
-            <Image src="/item2.png" alt="Living" width={400} height={300} />
-            <div className="p-4 text-center">
+        </div>
+
+
+      {/*  home page  -----  3rd part */}
+        <div className="container mx-auto px-4 py-12 sm:py-16">
+           <div className="text-center mb-8 sm:mb-10">
+             <h2 className="text-2xl sm:text-3xl font-bold mb-2">Browse The Range</h2>
+             <p className="text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+           <div className="bg-white">
+             <Image src="/item3.png" alt="Dining" width={400} height={300} />
+               <div className="p-4 text-center">
+                  <p className="text-lg font-bold">Dining</p>
+               </div>
+           </div>
+           <div className="bg-white">
+             <Image src="/item2.png" alt="Living" width={400} height={300} />
+              <div className="p-4 text-center">
               <p className="text-lg font-bold">Living</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function HomePage() {
       </div>
    
 
-  <div className="bg-white pt-0">
+      <div className="bg-white pt-0">
     <div className="container mx-auto px-4 py-0">
     <div className="text-center mb-10">
           <h1 className="text-3xl font-bold mb-2">Our Products</h1>
