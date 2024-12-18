@@ -14,8 +14,8 @@ export default function HomePage() {
     <Homebg />
     <Homethree />
     <Homepro />
-    <HomeSlides />
     <HomePics />
+       <HomeSlides />
     <Footer />
 </div>
       </>
