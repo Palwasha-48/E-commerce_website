@@ -1,11 +1,9 @@
-import Navbar from "./components/Navbar"
+import Home from "./components/Home";
+
 const Web = () => {
   return (
-    <div>
-
-        <Navbar />
-       
-
+    <div>      
+      <Home />
     </div>
   );
 };
