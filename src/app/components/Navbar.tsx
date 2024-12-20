@@ -16,7 +16,7 @@ const [menuOpen, setMenuOpen] = useState(false);
                 <div className="hidden lg:flex items-center space-x-6">
                   <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
                   <a href="/shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
-                  <a href="/Blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
+                  <a href="/blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
                   <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -37,7 +37,7 @@ const [menuOpen, setMenuOpen] = useState(false);
                 <div className="lg:hidden flex flex-col mt-4 space-y-4">
                   <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
                   <a href="/shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
-                  <a href="/Blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
+                  <a href="/blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
                   <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
                 </div>
               )}
