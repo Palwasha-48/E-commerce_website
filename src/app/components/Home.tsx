@@ -9,15 +9,13 @@ import HomeSlides from "./HomeSlides";
 export default function HomePage() {
   return ( 
     <>
-    <div className="bg-white min-h-screen pb-4">   
-    <Navbar />
+  <div className="bg-white min-h-screen pb-4">   
     <Homebg />
     <Homethree />
     <Homepro />
     <HomePics />
-       <HomeSlides />
-    <Footer />
-</div>
+    <HomeSlides />
+  </div>
       </>
 )
 }
