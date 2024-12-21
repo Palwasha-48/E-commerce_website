@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { CiSearch } from 'react-icons/ci'
 import { FaUser, FaCalendar, FaTag } from 'react-icons/fa'
 import { HiOutlineTrophy } from 'react-icons/hi2'
 import { LuBadgeCheck } from 'react-icons/lu'
