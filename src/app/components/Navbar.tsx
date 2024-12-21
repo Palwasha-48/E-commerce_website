@@ -17,7 +17,7 @@ const [menuOpen, setMenuOpen] = useState(false);
                   <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
                   <a href="/shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
                   <a href="/blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
-                  <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
+                  <a href="/contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
                 </div>
                 <div className="flex items-center space-x-4">
                   <FontAwesomeIcon icon={faUser} className="hover:text-gray-800 cursor-pointer" />
@@ -38,7 +38,7 @@ const [menuOpen, setMenuOpen] = useState(false);
                   <a href="/Home" className="hover:text-gray-800 text-sm font-medium">Home</a>
                   <a href="/shop" className="hover:text-gray-800 text-sm font-medium">Shop</a>
                   <a href="/blog" className="hover:text-gray-800 text-sm font-medium">Blog</a>
-                  <a href="/Contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
+                  <a href="/contact" className="hover:text-gray-800 text-sm font-medium">Contact</a>
                 </div>
               )}
       
