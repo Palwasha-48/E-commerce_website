@@ -2,7 +2,7 @@ import Homebg from "./Homebg";
 import Homethree from "./Homethree";
 import Homepro from "./Homepro";
 import Home_slides from "./Home_slides";
-import HomePics from "./Homepics";
+import Homepics from "./Homepics";
 
 export default function HomePage() {
   return ( 
@@ -12,7 +12,7 @@ export default function HomePage() {
     <Homethree />
     <Homepro />
     <Home_slides />
-    <HomePics />
+    <Homepics />
 </div>
       </>
       )}
