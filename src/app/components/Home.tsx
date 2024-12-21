@@ -1,5 +1,3 @@
-import Footer from "./Footer"
-import Navbar from "./Navbar";
 import Homebg from "./Homebg";
 import Homethree from "./Homethree";
 import Homepro from "./Homepro";
