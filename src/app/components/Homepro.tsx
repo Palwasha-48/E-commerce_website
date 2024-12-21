@@ -139,10 +139,10 @@ export default function Homepro ()  {
                 New
               </div>
                 </div>
+      
             </div>
           </div>
         </div>
-      
         <div className='flex justify-center pt-8 pb-4 '>
           <button className="bg-white border border-x-yellow-700 border-y-yellow-700 text-yellow-700 font-semibold py-[6px] px-16 hover:bg-orange-100 hover:text-yellow-700 transition-colors">
             Show More
