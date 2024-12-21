@@ -1,4 +1,5 @@
 import React from 'react'
+
 const homebg = () => {
   return (
     <div className="bg-white min-h-full pb-0">   
@@ -16,4 +17,5 @@ const homebg = () => {
     </div>
   )
 }
+
 export default homebg
