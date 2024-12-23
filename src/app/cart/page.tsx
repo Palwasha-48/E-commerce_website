@@ -32,7 +32,7 @@ const page = () => {
           <div className="pl-4 md:pl-8 flex flex-col md:flex-row items-center md:items-start mt-6 gap-6">
             <Link href='/singlepro'>
                 <div className="mb-4 md:mb-0">
-                  <img
+                  <Image
                     src="/simplebig.png"
                     height={100}
                     width={100}
