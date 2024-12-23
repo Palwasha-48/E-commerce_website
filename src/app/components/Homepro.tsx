@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { IoMdHeartEmpty, IoMdShare } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
+import Link from 'next/link';
 
 export default function Homepro ()  {
   return (
@@ -12,7 +13,7 @@ export default function Homepro ()  {
                 <h1 className="text-3xl font-bold mb-2">Our Products</h1>
             </div>
       
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="bg-gray-100 relative">
                   <Image
                     src="/pro1.png"
@@ -144,9 +145,9 @@ export default function Homepro ()  {
           </div>
         </div>
         <div className='flex justify-center pt-8 pb-4 '>
-          <button className="bg-white border border-x-yellow-700 border-y-yellow-700 text-yellow-700 font-semibold py-[6px] px-16 hover:bg-orange-100 hover:text-yellow-700 transition-colors">
+         <Link href="/shop"> <button className="bg-white border border-x-yellow-700 border-y-yellow-700 text-yellow-700 font-semibold py-[6px] px-16 hover:bg-orange-100 hover:text-yellow-700 transition-colors">
             Show More
-          </button>
+          </button> </Link>
           </div>
     </div>
   )
