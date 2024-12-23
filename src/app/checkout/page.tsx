@@ -4,7 +4,6 @@ import { TfiHeadphoneAlt } from 'react-icons/tfi'
 import { HiOutlineTrophy } from 'react-icons/hi2'
 import { LuBadgeCheck } from 'react-icons/lu'
 import { RiHandHeartLine } from 'react-icons/ri'
-import { FaCircle } from 'react-icons/fa'
 
 const page = () => {
   return (
