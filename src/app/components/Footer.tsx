@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white shadow-slate-300 " >
+    <footer className="bg-white shadow-slate-300 pb-8" >
       <div className="container mx-auto py-8 px-4 border-y-2 border-gray-200 pt-[2px] items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className='pt-[18px] space-x-0 space-y-10'>
@@ -22,16 +22,16 @@ const Footer = () => {
             </ul>
           </div>
           <div className=' pt-[18px] space-y-10 space-x-0 pl-[-35px]'>
-            <h3 className="text-lg font-semibold mb-4">Help</h3>
+            <h3 className="text-lg font-semibold mb-4 mx-5 lg:mx-0">Help</h3>
             <ul className="space-y-10 space-x-0">
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Payment Options</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Returns</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Privacy Policies</a></li>
+              <li><a href="#" className="text-gray-600 mx-5 lg:mx-0 hover:text-gray-800">Payment Options</a></li>
+              <li><a href="#" className="text-gray-600 mx-5 lg:mx-0 hover:text-gray-800">Returns</a></li>
+              <li><a href="#" className="text-gray-600 mx-5 lg:mx-0 hover:text-gray-800">Privacy Policies</a></li>
             </ul>
           </div>
           <div className=' pt-[18px] space-y-10 pl-0 pr-10'>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <div className="flex">
+            <h3 className="text-lg font-semibold mb-4 mx-5 lg:mx-0">Newsletter</h3>
+            <div className="flex mx-5 lg:mx-0">
               <input 
                 type="email" 
                 placeholder="Enter Your Email Address" 
