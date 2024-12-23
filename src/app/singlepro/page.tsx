@@ -62,11 +62,11 @@ const page = () => {
             <div className='rounded-full bg-yellow-600 w-10 h-10'></div>
           </div>
           <div className='flex gap-x-3 lg:gap-x-5 pt-4'>
-            <button className='rounded-xl border-gray-400 border-2 w-28 h-12'> -   1   + </button>
+            <button className='rounded-xl  border-gray-400 border-2 w-24 lg:w-28 h-12'> -   1   + </button>
            <Link href='/cart'>
-              <button className='rounded-xl hover:bg-gray-200 border-gray-900 border-2 w-40 h-12'>Add to Cart</button>
+              <button className='rounded-xl hover:bg-gray-200 border-gray-900 border-2 w-36 lg:w-40 h-12'>Add to Cart</button>
             </Link>
-            <button className='rounded-xl border-gray-900 border-2 w-40 h-12'>+ Campare</button>
+            <button className='rounded-xl border-gray-900 border-2 w-36 lg:w-40 h-12'>+ Campare</button>
           </div>
           <ul className='grid gap-y-2 text-sm pt-12 text-gray-500'>
             <li className='text-start'>SKU:<span> SS001</span></li>
