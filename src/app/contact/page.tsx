@@ -20,14 +20,14 @@ const page = () => {
             </div>
         </div>
 
-        <div className='text-center justify-center pt-24'>
+        <div className='text-center justify-center pt-16 lg:pt-20'>
             <h1 className='text-2xl lg:text-4xl font-semibold'>Get In Touch With Us</h1>
             <p className='font-normal pt-6 text-gray-500'>For More Information About Our Product & Services. Please Feel Free To Drop Us An Email.</p>
             <p className='font-normal text-gray-500'>Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
         </div>
 
 
-      <div className="lg:flex lg:pl-48 md:grid container  space-x-5 items-center justify-center min-h-screen p-4">
+      <div className="lg:flex lg:pl-48 md:grid container space-x-5 items-start pt-10 min-h-screen p-6">
         <div className="items-center justify-center max-w-6xl bg-white rounded-lg p-6 grid grid-cols-1 md:grid-cols-1 gap-8">
 
           <div className="flex items-start space-x-4">
@@ -56,7 +56,7 @@ const page = () => {
 
         </div>
 
-        <div className='grid items-center space-y-4 p-12 justify-center'>
+        <div className='grid items-center space-y-4 justify-center'>
           <div className='pt-0'>
             <p className='pb-3 text-xl font-normal'>Your name</p>
             <input type="text" placeholder='Abc' className='border  border-gray-500 rounded-md p-2 h-14 w-96' />
