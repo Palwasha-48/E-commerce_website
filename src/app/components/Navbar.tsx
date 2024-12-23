@@ -11,13 +11,15 @@ import { TbShoppingBagX } from "react-icons/tb";
 
 export default function Homepage() {
 const [menuOpen, setMenuOpen] = useState(false);
-const ref = useRef(null);
+const ref = useRef<HTMLDivElement>(null);
+
 const toggleCart = () => {
-  if (ref.current.classList.contains('translate-x-full')){
+  if (!ref.current) return 
+
+  if (ref.current.classList.contains('translate-x-full')) {
     ref.current.classList.remove('translate-x-full')
     ref.current.classList.add('translate-x-0')
-  }
-  else if (!ref.current.classList.contains('translate-x-full')){
+  } else {
     ref.current.classList.remove('translate-x-0')
     ref.current.classList.add('translate-x-full')
   }
@@ -37,9 +39,9 @@ const toggleCart = () => {
           <Link href="/contact">Contact</Link>
         </div>
         <div className="flex items-center space-x-4">
-          <FontAwesomeIcon icon={faUser} className="hover:text-gray-800 cursor-pointer" />
-          <FontAwesomeIcon icon={faSearch} className="hover:text-gray-800 cursor-pointer" />
-          <FontAwesomeIcon icon={faHeart} className="hover:text-gray-800 cursor-pointer" />
+          <FontAwesomeIcon icon={faUser} className="hover:text-gray-800" />
+          <FontAwesomeIcon icon={faSearch} className="hover:text-gray-800" />
+          <FontAwesomeIcon icon={faHeart} className="hover:text-gray-800" />
           <div onClick={toggleCart} ><FontAwesomeIcon icon={faShoppingCart} className="hover:text-gray-800 cursor-pointer" /></div>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -76,7 +78,7 @@ const toggleCart = () => {
               <div><Image src='/simplebig.png' alt='cart' height={100} width={100} className='rounded-xl bg-orange-100' /></div>
               <div className=' pt-2 grid'>
                 <p>Asgaard sofa</p>
-                <p>1 x Rs. 250,000.00</p>
+                <p>1 x <span className="text-amber-700"> Rs. 250,000.00</span></p>
               </div>
               <div className='pt-5'><IoMdCloseCircle /></div>
             </div>
@@ -85,25 +87,30 @@ const toggleCart = () => {
               <div><Image src='/sidebar2.jpeg' alt='cart' height={100} width={100} className='rounded-xl bg-orange-100' /></div>
               <div className=' pt-2 grid'>
                 <p>Casaliving Wood</p>
-                <p>1 x Rs. 270,000.00</p>
+                <p>1 x <span className="text-amber-700">Rs. 270,000.00</span></p>
               </div>
               <div className='pt-5'><IoMdCloseCircle /></div>
             </div>
           </div>
 
-          <div className='p-5 pt-10'>
+          <div className='p-5 pt-32'>
             <div className='pb-4 border-b-2 border-gray-300 flex justify-between'>
               <p className='text-xl font-semibold'>Subtotal</p>
               <p className='text-amber-700 font-semibold text-xl '>Rs. 520,000.00</p>
             </div>
             <div className='flex items-end justify-between gap-2 pt-5'>
-              <button className='rounded-full hover:bg-gray-200 border border-black h-10 w-16 lg:w-20'>Cart</button>
-              <button className='rounded-full hover:bg-gray-200 border border-black h-10 w-24 lg:w-28'>Checkout</button>
+             <Link href="/cart"><button className='rounded-full hover:bg-gray-200 border border-black h-10 w-16 lg:w-20'>Cart</button></Link>
+             <Link href="/checkout"><button className='rounded-full hover:bg-gray-200 border border-black h-10 w-24 lg:w-28'>Checkout</button></Link>
               <button className='rounded-full hover:bg-gray-200 border border-black h-10 w-24 lg:w-28'>Comparison</button>
             </div>
           </div>
         </div>
       </div>
       </>
+
+
+
+
+    
   )
 }
