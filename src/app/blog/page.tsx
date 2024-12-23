@@ -19,9 +19,9 @@ export default function page () {
           </div>
           <div>
 
-          <div className='lg:flex md:grid container m-4 items-center mx-auto gap-10 justify-between'>
+          <div className='lg:flex md:grid container m-4 items-start mx-auto gap-10 justify-between'>
 
-            <div className='w-full grid pt-4 justify-center items-center text-center'>
+            <div className='w-full mx-4 lg:mx-0 grid pt-14 justify-center items-center text-center'>
               <div>
                 <Image src="/blog1.jpeg" alt="blog1" height={700} width={700} className='rounded-xl'/>
               </div>
@@ -69,7 +69,7 @@ export default function page () {
                </div>
             </div>
 
-            <div className='w-full md:w-1/2 lg:w-1/3 grid pt-4 md:pt-10 justify-center text-center'>
+            <div className='w-full md:w-1/2 lg:w-1/3 grid pt-14  justify-center text-center'>
               <div>
                 <input 
                   type="text" 
