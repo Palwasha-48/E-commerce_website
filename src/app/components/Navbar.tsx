@@ -15,7 +15,7 @@ const [menuOpen, setMenuOpen] = useState(false);
                   <Image src="/logoname.png" alt="Logo Name" className="h-6" height={100} width={120}/>
                 </div>
                 <div className="hidden lg:flex items-center space-x-6 hover:text-gray-800 text-sm font-medium">
-                  <Link href="/components">Home</Link>
+                  <Link href="/">Home</Link>
                   <Link href="/shop">Shop</Link>
                   <Link href="/blog">Blog</Link>
                   <Link href="/contact">Contact</Link>
@@ -36,7 +36,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       
               {menuOpen && (
                 <div className="lg:hidden flex flex-col mt-4 space-y-4">
-                  <Link href="/components">Home</Link>
+                  <Link href="/">Home</Link>
                   <Link href="/shop">Shop</Link>
                   <Link href="/blog">Blog</Link>
                   <Link href="/contact">Contact</Link>
